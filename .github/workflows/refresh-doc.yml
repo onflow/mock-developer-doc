@@ -23,7 +23,7 @@ on:
         required: true
 
 env:
-  WEB_URL: 'https://flow-docs-staging.fly.dev/' # To be updated once the web server is live
+  WEB_URL: 'https://flow-docs-staging.fly.dev' # To be updated once the web server is live
 
 jobs:
   reusable_refresh_job:
