@@ -23,7 +23,7 @@ on:
         required: true
 
 env:
-  WEB_URL: 'https://3efd-2604-3d08-937c-ad00-59c-e8b-e4ca-ac5a.ngrok.io' # To be updated once the web server is live
+  WEB_URL: 'https://flow-docs-staging.fly.dev/' # To be updated once the web server is live
 
 jobs:
   reusable_refresh_job:
