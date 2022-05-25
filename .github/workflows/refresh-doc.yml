@@ -3,12 +3,6 @@ name: refresh-doc
 on:
   workflow_call:
     inputs:
-      username:
-        required: true
-        type: string
-      anyModified:
-        required: true
-        type: string
       contentPaths:
         required: true
         type: string
@@ -18,38 +12,17 @@ on:
       commitSha:
         required: true
         type: string
-    secrets:
-      token:
-        required: true
-
-env:
-  WEB_URL: 'https://eodzjkvfnfbka0z.m.pipedream.net' # To be updated once the web server is live
 
 jobs:
   reusable_refresh_job:
     runs-on: ubuntu-latest
     steps:
-    - name: Install Python Packages
-      run: pip install requests
-    - name: Compile all files with diff into a request body using Python
-      run: |
-        import requests, time
-
-        repository = "${{ inputs.repository }}"
-        commitSha = "${{ inputs.commitSha }}"
-        contentPaths = "${{ inputs.contentPaths }}"
+    - name: 📞 Call refresh endpoint
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: 'https://flow-docs-staging.fly.dev/action/refresh'
+        method: 'POST'
+        data: '{ "auth":"authToken", "repo":"${{ inputs.repository }}", "commitSha":"${{ inputs.commitSha }}", "contentPaths":["${{ inputs.contentPaths }}"] }'
+        ignoreStatusCodes: '404'
         
-        contentPathsStr = '['
-        if (contentPaths == ""):
-          contentPathsStr += ']'
-        else:
-          contentPathFormatted = ', '.join('"{0}"'.format(p) for p in contentPaths.split(' '))
-          contentPathsStr += contentPathFormatted + ']'
-
-        payload = '{"repo": "%s", "contentPaths": "%s", "commitSha": "%s"}' % (repository, contentPathsStr, commitSha)
-        print("Payload", payload)
-
-        response = requests.post('${{ env.WEB_URL }}', data=payload)
-        print("Request Response", response)
-
-      shell: python
+       

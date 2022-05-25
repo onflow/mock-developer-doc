@@ -3,7 +3,7 @@ name: call-refresh-doc
 on:
   push:
     branches:
-      - hannah-github-actions
+      - main
 
 jobs:
   compare:
@@ -19,7 +19,7 @@ jobs:
           docs/**
 
     # --- Log all diff info --- 
-    - name: Log the files commit SHA if any md files have diffs
+    - name: Log the files commit SHA if any md/mdx files have diffs
       continue-on-error: true
       if: steps.changed-files.outputs.any_modified == 'true'
       run: |
@@ -43,12 +43,9 @@ jobs:
   call-refresh-workflow-passing-data:
     if: ${{ needs.compare.outputs.any_modified }} == 'true'
     needs: compare
-    uses: onflow/cadence/.github/workflows/refresh-doc.yml@master
+    uses: onflow/mock-developer-doc/.github/workflows/refresh-doc.yml@main
     with:
-      username: codingone21
-      anyModified: ${{ needs.compare.outputs.any_modified }}
       contentPaths: ${{ needs.compare.outputs.all_modified_files }}
       repository: ${{ github.event.repository.name }}
       commitSha: ${{ github.sha }}
-    secrets:
-      token: ${{ secrets.TOKEN }}
+      
