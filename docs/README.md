@@ -1,6 +1,7 @@
 # Documentation
 
 This directory contains the documentation for Cadence.
+New line for testing refresh endpoint.
 
 The [`language` directory](https://github.com/onflow/cadence/tree/master/docs/language) contains the Cadence Language Reference.
 The contents of this directory are deployed to the [Flow Documentation website](https://docs.onflow.org).
