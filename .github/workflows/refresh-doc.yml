@@ -18,6 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 📞 Call refresh endpoint
+      if:  ${{ inputs.contentPaths != 0 }}
       uses: fjogeleit/http-request-action@v1
       with:
         url: 'https://flow-docs-staging.fly.dev/action/refresh'
