@@ -7,3 +7,5 @@ README.md
 /.github/workflow/  : contains Github Action workflow files
 /doc                : files (mostly .md) copied from 'onflow/cadence' repository
 ```
+The repositories that store the documentation sources are the following: onflow/...
+* flow, cadence, flow-cli, flow-js-testing, flow-go-sdk, fcl-js, flow-emulator
