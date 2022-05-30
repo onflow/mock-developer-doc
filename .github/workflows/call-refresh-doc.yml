@@ -43,8 +43,8 @@ jobs:
 
   # --- If modified, call refresh --- 
   call-refresh-workflow-passing-data:
-    if: ${{ needs.compare.outputs.any_modified }} == 'true'
     needs: compare
+    if: ${{ needs.compare.outputs.all_modified_files != 0 }}
     uses: onflow/mock-developer-doc/.github/workflows/refresh-doc.yml@main
     with:
       contentPaths: ${{ needs.compare.outputs.all_modified_files }}
