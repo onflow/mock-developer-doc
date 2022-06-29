@@ -1,5 +1,7 @@
 # FAQ
 
+Docs version latest
+
 ## Is there a formal grammar (e.g. in BNF) for Cadence?
 
 Yes, there is a [EBNF for Cadence](https://github.com/onflow/cadence/blob/master/docs/cadence.ebnf).
