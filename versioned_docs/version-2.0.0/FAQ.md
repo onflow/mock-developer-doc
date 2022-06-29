@@ -1,6 +1,6 @@
 # FAQ
 
-Docs version latest
+Docs version 2.0.0
 
 ## Is there a formal grammar (e.g. in BNF) for Cadence?
 
