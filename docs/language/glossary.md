@@ -156,7 +156,7 @@ storagePath.toString()  // is "/storage/path"
 
 [More info](https://docs.onflow.org/cadence/language/accounts/#paths) on Paths
 
-## <- (lower than, hyphen) (Move operator)
+## `<-` (lower than, hyphen) (Move operator)
 
 The move operator `<-` replaces the assignment operator `=` in assignments that involve resources. To make assignment of resources explicit, the move operator `<-` must be used when:
 
