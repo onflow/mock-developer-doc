@@ -199,7 +199,7 @@ var a: @R? <- nil
 a <-! create R()
 ```
 
-## <-> (lower than, hyphen, greater than) (Swap operator)
+## `<->` (lower than, hyphen, greater than) (Swap operator)
 
 `<->` is referred to as the Swap operator. It swaps values between the variables to the left and right of it. [More info](https://docs.onflow.org/cadence/language/operators/#swapping)
 
