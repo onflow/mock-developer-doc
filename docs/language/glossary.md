@@ -186,7 +186,7 @@ let a <- [
 ]
 ```
 
-## <-! (lower than, hyphen, exclamation mark) (Force-assignment move operator)
+## `<-!` (lower than, hyphen, exclamation mark) (Force-assignment move operator)
 
 Assigns a resource value to an optional variable if the variable is `nil` (if it is not nil, it aborts)
 
