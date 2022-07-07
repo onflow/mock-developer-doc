@@ -45,6 +45,7 @@ The execution effort for a transaction is determined by the code path the transa
 
 To provide you a better understanding of the cost ranges, here are some common transaction types and their associated execution costs, given the current `executionEffortCost` and `inclusionEffortCost` parameters:
 
+
 <table>
     <tr>
         <td>Transaction Type</td>
@@ -63,7 +64,6 @@ To provide you a better understanding of the cost ranges, here are some common t
                 (heavily depends on the NFT size)
             </p>
         </td>
-
         <td>0.0000019</td>
         <td>1</td>
     </tr>
@@ -93,6 +93,7 @@ To provide you a better understanding of the cost ranges, here are some common t
         <td>16</td>
     </tr>
 </table>
+
 
 ### Inclusion costs
 
