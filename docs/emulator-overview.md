@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://docs.onflow.org/emulator/">
-    <img src="./emulator-banner.svg" alt="Logo" width="410" height="auto">
+    <img src="./emulator-banner.svg" alt="Logo" width="410" height="auto" />
   </a>
   <p align="center">
     <i>The Flow Emulator is a lightweight tool that emulates the behaviour of the real Flow network.</i>
