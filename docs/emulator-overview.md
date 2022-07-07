@@ -10,7 +10,6 @@
     <br />
     <br />
     <a href="https://g thub.com/onflow/flow-emulator/issues">Report Bug</a>
-    ·
     <a href="https://github.com/onflow/flow-emulator/blob/master/CONTRIBUTING.md">Contribute</a>
   </p>
 </p>
