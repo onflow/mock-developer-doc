@@ -1,0 +1,1 @@
+[Sibling MDX](./anti-patterns)
