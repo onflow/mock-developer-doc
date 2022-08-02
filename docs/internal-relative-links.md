@@ -1,1 +1,1 @@
-[Sibling MDX](./anti-patterns)
+[Sibling MDX](./anti-patterns.mdx)
