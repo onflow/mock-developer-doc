@@ -3,10 +3,3 @@
     {
       "type": "category",
       "label": "Example",
-      "items": [
-        { "type": "doc", "label": "FAQ", "id": "FAQ" },
-        { "type": "doc", "label": "Accounts", "id": "language/accounts" }
-      ]
-    }
-  ]
-}
