@@ -4,15 +4,15 @@
   "sidebars": {
     "": [
       {
-        "title": "Testing",
+        "title": "This document lives in mock-dev-docs",
         "items": [
           {
             "title": "This content is in the mock-developer-docs repo",
-            "href": ""
+            "href": "https://github.com/onflow/mock-developer-doc/blob/json-manifest-valid/docs/flow-docs.json"
           },
           {
             "title": "Another example",
-            "href": ""
+            "href": "https://example.com"
           }
         ]
       }
