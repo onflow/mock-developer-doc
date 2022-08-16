@@ -7,7 +7,11 @@
         "title": "Testing",
         "items": [
           {
-            "title": "Introduction to Cadence",
+            "title": "This content is in the mock-developer-docs repo",
+            "href": ""
+          },
+          {
+            "title": "Another example",
             "href": ""
           }
         ]
