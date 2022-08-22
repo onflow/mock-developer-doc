@@ -1,5 +1,5 @@
 {
-  "$schema": "https://gist.githubusercontent.com/schpet/37ccf059d17e24fbef30c233550eb42b/raw/4dca1bfea149968e7f493d41d8869090206134f8/test-schema.json",
+  "$schema": "https://flow-docs-staging.fly.dev/schemas/flow-docs.json",
   "displayName": "Mock Docs",
   "sidebars": {
     "": [
