@@ -113,3 +113,4 @@ go test -race -v ./runtime/tests/checker -cadence.checkConcurrently=10
 This runs each check of a checker test 10 times, concurrently,
 and asserts that the checker errors of all checks are equal.
 
+👀
