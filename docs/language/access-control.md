@@ -2,6 +2,8 @@
 title: Access control
 ---
 
+This is a test of preview link for staging.
+
 Access control allows making certain parts of the program accessible/visible
 and making other parts inaccessible/invisible.
 
@@ -27,7 +29,7 @@ In Flow and Cadence, there are two types of access control:
 The high-level reference-based security (point 1 above)
 will be covered in a later section.
 
-Top-level declarations
+Top-level declarations !!
 (variables, constants, functions, structures, resources, interfaces)
 and fields (in structures, and resources) are always only able to be written
 to and mutated (modified, such as by indexed assignment or methods like `append`) 
