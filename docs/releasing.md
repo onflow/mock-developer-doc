@@ -11,3 +11,5 @@ For example, to release v0.21.2:
 [TUT](tutorial/03-fungible-tokens.mdx)
 
 GREAT WORK!
+
+SAD
