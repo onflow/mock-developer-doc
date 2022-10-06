@@ -10,4 +10,4 @@ For example, to release v0.21.2:
 
 [TUT](tutorial/03-fungible-tokens.mdx)
 
-THIS SHOULD UPDATE
+THIS SHOULD UPDATE?
